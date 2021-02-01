@@ -7,6 +7,13 @@ import { EjemploBaseComponent } from './ejemplo-base/ejemplo-base.component';
 import { NavComponent } from './shared/nav/nav.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { EditFabricComponent } from './edit-fabric/edit-fabric.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
+// modulos material
+
+import { MaterialModule } from './material.module';
+
+// fin modulos material
 
 @NgModule({
   declarations: [
@@ -15,10 +22,14 @@ import { EditFabricComponent } from './edit-fabric/edit-fabric.component';
     NavComponent,
     FooterComponent,
     EditFabricComponent
+    
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,12 +1,21 @@
-<h1 class="center-align">Canvas Avanzado</h1>
 
-<div class="container">
+        <canvas id="canvas" width="800" height="600" style="border: 1px solid black"></canvas>
 
-    <canvas id="canvas" width="800" height="600" style="border: 1px solid black"></canvas>
-</div>
+        <button mat-raised-button color="primary">Botón</button>
 
-
+<mat-slider min="1" max="100" step="1" value="1"></mat-slider>
 
 
 
 
+
+
+<mat-grid-list cols="4" rowHeight="100px">
+    <mat-grid-tile
+        *ngFor="let tile of tiles"
+        [colspan]="tile.cols"
+        [rowspan]="tile.rows"
+        [style.background]="tile.color">
+      {{tile.text}}
+    </mat-grid-tile>
+  </mat-grid-list>

@@ -5,11 +5,11 @@ import { EditFabricComponent } from './edit-fabric/edit-fabric.component';
 
 
 const routes: Routes = [
-  { path: '', component: EjemploBaseComponent },
+  { path: '', component: EditFabricComponent },
   { path: 'basico', component: EjemploBaseComponent },
   { path: 'avanzado', component: EditFabricComponent },
-  { path: 'path4', component: EjemploBaseComponent },
-  { path: '**', component: EjemploBaseComponent },
+  { path: 'path4', component: EditFabricComponent },
+  { path: '**', component: EditFabricComponent },
 ];
 
 @NgModule({
